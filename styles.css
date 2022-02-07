@@ -1,0 +1,155 @@
+* {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-very-dark-blue: hsl(217, 54%, 11%);
+  --color-very-dark-blue-one: hsl(216, 50%, 16%);
+  --color-very-dark-blue-two: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--color-very-dark-blue);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.nft-card {
+  background-color: var(--color-very-dark-blue-one);
+  width: 320px;
+  border: none;
+  border-radius: 8px;
+  transform: translate(+10%, +50%);
+  text-align: left;
+}
+
+.nft-container {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.nft {
+  height: auto;
+  width: 285px;
+  border: none;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.hover {
+  position: absolute;
+  transition: 0.2s ease;
+  background-color: var(--color-cyan);
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55.5%, -56%);
+  text-align: center;
+  width: 285px;
+  margin: 15px;
+  border-radius: 8px;
+  height: 88%;
+}
+
+.eye {
+  top: 50%;
+  left: 50%;
+  transform: translate(-5%, +240%);
+}
+
+.nft-container:hover .hover {
+  opacity: 0.6;
+}
+
+.nft-caption {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-white);
+  margin: 0 15px 0 15px;
+}
+
+.para {
+  font-weight: 300;
+  color: var(--color-soft-blue);
+  margin: 20px 15px 30px 15px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.eth {
+  margin-left: 15px;
+  transform: translate(+20%, -20%);
+}
+
+.eth-txt {
+  color: var(--color-cyan);
+  margin: 0;
+  transform: translate(+10%, -30%);
+}
+
+.duration {
+  color: var(--color-soft-blue);
+  transform: translate(+480%, -20%);
+}
+
+.duration-txt {
+  color: var(--color-soft-blue);
+  transform: translate(+110%, -30%);
+}
+
+.hr {
+  color: var(--color-soft-blue);
+  opacity: 0.1;
+  margin: 0 15px 15px 15px;
+}
+
+.reference {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: -40px;
+}
+
+.creator-avatar {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.first-ref {
+  color: var(--color-soft-blue);
+  transform: translate(+25%, -25%);
+  margin-top: 15px;
+}
+
+.second-ref {
+  color: var(--color-white);
+  transform: translate(+58%, -125%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--color-soft-blue);
+}
+.attribution a {
+  color: var(--color-cyan);
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
